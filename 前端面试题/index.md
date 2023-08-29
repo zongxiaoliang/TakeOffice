@@ -284,7 +284,7 @@ align-self:start;
 
 #### 3.position 属性
 
-```
+```css
 //相对定位 根据自身定位
 position:relative;
 //绝对定位 基于最近的祖先元素为非static定位的元素定位，若没有找到则基于body元素定位
@@ -324,7 +324,7 @@ z-index:999;
 
 - animation是动画
 
-  ```
+  ```css
   // 设置关键帧
   @keyfreams example{
   	//代表开始(0%)
@@ -494,7 +494,7 @@ div ~ p{}
 
 ​	伪类用于设置元素的特殊状态，伪元素给元素设置一个虚拟元素，不存在DOM当中。
 
-```
+```css
 //常用伪类
 div:link{}
 div:visited{}
@@ -671,7 +671,7 @@ window.addEventListener('scroll',()=>{
 
 #### 34.float 属性怎么使用，如何清除浮动
 
-```
+```css
 //使用浮动
 float:left; //right
 //清除浮动 

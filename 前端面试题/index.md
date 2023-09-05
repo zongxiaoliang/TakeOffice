@@ -155,9 +155,9 @@ self.onmessage = (e)=>{
 self.postMessage("hello main");
 ```
 
-#### 13.HTML5 的离线储存怎么使用，它的工作原理是什么
+#### 13.HTML5 的离线储存怎么使用
 
-​	使用HTML5的离线存储需要在html标签上添加mainfest属性引用缓存清单文件，项目中添加mainfest文件
+​	使用HTML5的离线存储需要在html标签上添加mainfest属性引用缓存清单文件，项目中添加mainfest文件 
 
 ```html
 //index.html
@@ -3015,4 +3015,4 @@ class PubSub{
 3. 开发中会使用一些什么工具软件
 4. 除了前端还有了解过其他的技术吗
 5. 对前端开发这个岗位的理解
-6. 你有什么优点，有什么缺点
+6. 你有什么优点，<!--有什么缺点-->

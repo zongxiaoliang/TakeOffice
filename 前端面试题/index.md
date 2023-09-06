@@ -181,7 +181,7 @@ index.html fallback.html
 
 #### 14.title 与 h1 的区别、b 与 strong 的区别、i 与 em 的区别
 
-- title标签可以改变页面标题名称，h1是语义化标签表示一级标签。
+- title标签可以改变页面标题名称，h1是语义化标签表示一级标题。
 - b元素定义粗体文字，strong元素表示强调文本。
 - i元素定义斜体文字，em元素表示强调文本。
 
@@ -849,7 +849,7 @@ for(var i = 0; i < arr.length; i ++){
 
 #### 14.Promise 是什么
 
-​	Promise是一种异步的解决方式,它有三种状态，pending、resolved、rejected，只有异步的操作结果才能决定它的状态，并且一旦状态发生改变就不再会变，它的状态只有可能从pending变为resolved或者rejected。Promise是一个构造函数，接收一个回调函数作为参数，该函数有两个参数也是回调函数,resolve和reject的作用分别是讲Promise的状态从未完成变为成功和从未完成变成失败。Promise的原型上有一个then方法，该方法接收两个回调函数作为参数，第一个参数当Promise状态变成resolved时候执行，第二个参数当状态变成rejected的时候执行，then会返回一个promise实例，所以then方法可以链式调用。
+​	Promise是一种异步的解决方式,它有三种状态，pending、resolved、rejected，只有异步的操作结果才能决定它的状态，并且一旦状态发生改变就不再会变，它的状态只有可能从pending变为resolved或者rejected。Promise是一个构造函数，接收一个回调函数作为参数，该函数有两个参数也是回调函数,resolve和reject的作用分别是将Promise的状态从未完成变为成功和从未完成变成失败。Promise的原型上有一个then方法，该方法接收两个回调函数作为参数，第一个参数当Promise状态变成resolved时候执行，第二个参数当状态变成rejected的时候执行，then会返回一个promise实例，所以then方法可以链式调用。
 
 #### 15.async 是什么
 
@@ -894,7 +894,7 @@ for(var i = 0; i < arr.length; i ++){
 
 ​	null代表空，undefined代表未定义
 
-#### 21."==="和"=="和 Object.is 的区别
+#### 21."===" 和 "=="和 Object.is 的区别
 
 - "==="比较值不会做隐式类型转换
 - "=="比较值内部会做隐式类型转换
@@ -1214,7 +1214,7 @@ console.log(`今天${day}`);
 
 #### 42.Map 和 Object 的区别，WeakMap 和 Map 又有什么区别
 
-- Object的key必须是字符串,Map的key可以是各种类型的值
+- Object的key只能是数字中文字符串,Map的key可以是各种类型的值
 - WeakMap的key必须是对象或Symbol类型，并且WeakMap的key弱引用，只要所引用的对象的其他引用都被清除，垃圾回收机制就会释放该对象所占用的内存
 
 #### 43.JavaScript 有哪些内置对象
@@ -1268,7 +1268,7 @@ const xhr = new XMLHttpRequest();
 //参数1：请求方式 2:请求URL 3:同步(false)/异步(true)
 xhr.open("GET","getAjaxDatas",true);
 //发送请求
-xhr.sent();
+xhr.send();
 //接收服务器的响应
 xhr.onreadystatechange = ()=>{
 	//判断请求状态是否成功
